@@ -230,8 +230,8 @@ export default function Register() {
 
                     <div className="text-center fs-6">
                       {" "}
-                      <a href="#">Already Have an Account</a> ?{" "}
-                      <a href="#">Login</a>{" "}
+                      <a href="/Login">Already Have an Account</a> ?{" "}
+                      <a href="/Login">Login</a>{" "}
                     </div>
 
                     {/* Button Part */}
