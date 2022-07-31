@@ -20,7 +20,8 @@ export default function Register() {
                   <form>
                     <div className="row">
                       <label className="form-label" for="fullname">
-                        Full Name *
+                        Full Name
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4">
                         <div className="form-outline">
@@ -36,7 +37,8 @@ export default function Register() {
 
                     <div className="row">
                       <label for="email" className="form-label">
-                        Personal Email *
+                        Personal Email
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -69,7 +71,8 @@ export default function Register() {
                     <div className="row">
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="password">
-                          Mobile No. *
+                          Mobile No.
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -83,7 +86,8 @@ export default function Register() {
 
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="cpassword">
-                          Alternate Mobile No. *
+                          Alternate Mobile No.
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -98,7 +102,8 @@ export default function Register() {
 
                     <div className="row">
                       <label for="address" className="form-label">
-                        House No./Lane No. *
+                        House No./Lane No.
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -114,7 +119,8 @@ export default function Register() {
 
                     <div className="row">
                       <label for="address" className="form-label">
-                        City/Town *
+                        City/Town
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -163,7 +169,8 @@ export default function Register() {
                     <div className="row">
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="password">
-                          State *
+                          State
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -177,7 +184,8 @@ export default function Register() {
 
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="cpassword">
-                          Pin Code *
+                          Pin Code
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -218,34 +226,36 @@ export default function Register() {
                       </div>
                     </div>
 
-                    {/* <div className="row">
-                      <label for="giturl" className="form-label">
-                        Organization/ Comapany
-                      </label>
-                      <div className="col-md-12 mb-4 d-flex align-items-center">
-                        <div className="form-outline datepicker w-100">
-                          <input
-                            type="url"
-                            className="form-control form-control-lg"
-                            id="giturl"
-                            //onChange={handleChangeURL}
-                          />
-                        </div>
-                      </div>
-                    </div> */}
+                    {/* Already having an Account */}
 
                     <div className="text-center fs-6">
                       {" "}
-                      <a href="./Login">Already Have an Account</a> ?{" "}
-                      <a href="Login.js">Login</a>{" "}
+                      <a href="#">Already Have an Account</a> ?{" "}
+                      <a href="#">Login</a>{" "}
                     </div>
-                    <div className="mt-4 pt-2 ml-5" align="center">
-                      <input
-                        className="btn btn-primary btn-lg"
-                        type="submit"
-                        value="Next ->"
-                        align="center"
-                      />
+
+                    {/* Button Part */}
+
+                    <div className="row">
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <input
+                            className="btn btn-primary"
+                            disabled
+                            type="submit"
+                            value="<-Back"
+                            align="center"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <a class="btn btn-primary" href="/Reg2" role="button">
+                            Next
+                          </a>{" "}
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>

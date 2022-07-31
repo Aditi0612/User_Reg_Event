@@ -165,7 +165,8 @@ export default function Reg3() {
                     <div className="row">
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="password">
-                          Password *
+                          Password
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -179,7 +180,8 @@ export default function Reg3() {
 
                       <div className="col-md-6 mb-4 pb-2">
                         <label className="form-label" for="cpassword">
-                          Confirm Password *
+                          Confirm Password
+                          <font color="red">*</font>
                         </label>
                         <div className="form-outline">
                           <input
@@ -188,6 +190,24 @@ export default function Reg3() {
                             className="form-control form-control-lg"
                             //onChange={handleChangeCpassword}
                           />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="row">
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <a class="btn btn-primary" href="/Reg2" role="button">
+                            Back
+                          </a>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <a class="btn btn-primary" href="#" role="button">
+                            Submit
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -212,14 +232,14 @@ export default function Reg3() {
                       </div>
                     </div> */}
 
-                    <div className="mt-4 pt-2 ml-5" align="center">
+                    {/* <div className="mt-4 pt-2 ml-5" align="center">
                       <input
                         className="btn btn-primary btn-lg"
                         type="submit"
                         value="Submit"
                         align="center"
                       />
-                    </div>
+                    </div> */}
                   </form>
                 </div>
               </div>

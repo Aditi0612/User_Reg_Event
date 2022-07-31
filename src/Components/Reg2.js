@@ -20,7 +20,8 @@ export default function Reg2() {
                   <form>
                     <div className="row">
                       <label className="form-label" for="fullname">
-                        Educational Qualification *
+                        Educational Qualification
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4">
                         <div className="form-outline">
@@ -36,7 +37,8 @@ export default function Reg2() {
 
                     <div className="row">
                       <label for="email" className="form-label">
-                        College Name *
+                        College Name
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -52,7 +54,8 @@ export default function Reg2() {
 
                     <div className="row">
                       <label for="phone number" className="form-label">
-                        Course Enrolled *
+                        Course Enrolled
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -98,7 +101,8 @@ export default function Reg2() {
 
                     <div className="row">
                       <label for="giturl" className="form-label">
-                        Year of Passing *
+                        Year of Passing
+                        <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
@@ -150,13 +154,35 @@ export default function Reg2() {
                       <a href="Login.js">Login</a>{" "}
                     </div> */}
 
-                    <div className="mt-4 pt-2 ml-5" align="center">
+                    {/* <div className="mt-4 pt-2 ml-5" align="center">
                       <input
                         className="btn btn-primary btn-lg"
                         type="submit"
                         value="Next ->"
                         align="center"
                       />
+                    </div> */}
+
+                    <div className="row">
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <a
+                            class="btn btn-primary"
+                            href="/Register"
+                            role="button"
+                          >
+                            Back
+                          </a>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 mb-4 pb-2">
+                        <div className="mt-4 pt-2 ml-2" align="center">
+                          <a class="btn btn-primary" href="/Reg3" role="button">
+                            Next
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>

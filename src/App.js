@@ -1,15 +1,21 @@
 import React from "react";
 import "./App.css";
-import Reg2 from "./Components/Reg2";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Reg3 from "./Components/Reg3";
+import Reg2 from "./Components/Reg2";
 import Register from "./Components/Register";
 
 function App() {
   return (
     <>
-      <Register />
-      <Reg2 />
-      <Reg3 />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Register />} />
+          <Route path="/Register" element={<Register />}></Route>
+          <Route path="/Reg2" element={<Reg2 />} />
+          <Route path="/Reg3" element={<Reg3 />} />
+        </Routes>
+      </Router>
     </>
   );
 }
