@@ -1,6 +1,8 @@
 import React from "react";
 import "./LogReg.css";
 import "./tagsinput.css";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Reg2() {
   return (
@@ -28,7 +30,7 @@ export default function Reg2() {
                           <input
                             type="text"
                             id="degree"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangeName}
                           />
                         </div>
@@ -44,7 +46,7 @@ export default function Reg2() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="text"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="course"
                             //onChange={handleChangeEmail}
                           />
@@ -61,7 +63,7 @@ export default function Reg2() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="text"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="cllg"
                             //onChange={handleChangeEmail}
                           />
@@ -78,7 +80,7 @@ export default function Reg2() {
                           <input
                             type="text"
                             id="yop"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangePassword}
                           />
                         </div>
@@ -92,7 +94,7 @@ export default function Reg2() {
                           <input
                             type="password"
                             id="cpassword"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangeCpassword}
                           />
                         </div>
@@ -100,16 +102,17 @@ export default function Reg2() {
                     </div> */}
 
                     <div className="row">
-                      <label for="giturl" className="form-label">
+                      <label for="year of passing" className="form-label">
                         Year of Passing
                         <font color="red">*</font>
                       </label>
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <div className="form-outline datepicker w-100">
                           <input
-                            type="url"
-                            className="form-control form-control-lg"
-                            id="giturl"
+                            type="text"
+                            className="form-control"
+                            id="yop"
+                            placeholder="YYYY"
                             //onChange={handleChangeURL}
                           />
                         </div>
@@ -124,7 +127,7 @@ export default function Reg2() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="url"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="giturl"
                             //onChange={handleChangeURL}
                           />
@@ -140,7 +143,7 @@ export default function Reg2() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="url"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="giturl"
                             //onChange={handleChangeURL}
                           />

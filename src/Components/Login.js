@@ -39,7 +39,7 @@ const Login = () => {
                           <input
                             type="email"
                             id="email"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             // onChange={handleChangeEmail}
                           />
                         </div>
@@ -54,7 +54,7 @@ const Login = () => {
                             <input
                               type="password"
                               id="password"
-                              className="form-control form-control-lg"
+                              className="form-control"
                               //   onChange={handleChangepassword}
                             />
                           </div>
@@ -79,7 +79,7 @@ const Login = () => {
                     </div>
                     <div className="mt-4 pt-2" align="center">
                       <input
-                        className="btn btn-primary btn-lg"
+                        className="btn btn-primary"
                         disabled={!verified}
                         type="submit"
                         value="Login"

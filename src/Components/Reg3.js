@@ -55,7 +55,7 @@ export default function Reg3() {
                           <input
                             type="text"
                             id="degree"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangeName}
                           />
                         </div>
@@ -70,7 +70,7 @@ export default function Reg3() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="text"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="course"
                             //onChange={handleChangeEmail}
                           />
@@ -86,7 +86,7 @@ export default function Reg3() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="text"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="cllg"
                             //onChange={handleChangeEmail}
                           />
@@ -103,7 +103,7 @@ export default function Reg3() {
                           <input
                             type="text"
                             id="yop"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangePassword}
                           />
                         </div>
@@ -117,7 +117,7 @@ export default function Reg3() {
                           <input
                             type="password"
                             id="cpassword"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             //onChange={handleChangeCpassword}
                           />
                         </div>
@@ -132,7 +132,7 @@ export default function Reg3() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="url"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="giturl"
                             //onChange={handleChangeURL}
                           />
@@ -148,7 +148,7 @@ export default function Reg3() {
                         <div className="form-outline datepicker w-100">
                           <input
                             type="url"
-                            className="form-control form-control-lg"
+                            className="form-control"
                             id="giturl"
                             //onChange={handleChangeURL}
                           />
@@ -170,9 +170,10 @@ export default function Reg3() {
                         </label>
                         <div className="form-outline">
                           <input
-                            type="text"
-                            id="yop"
-                            className="form-control form-control-lg"
+                            type="password"
+                            id="password"
+                            className="form-control"
+                            placeholder="********"
                             //onChange={handleChangePassword}
                           />
                         </div>
@@ -187,7 +188,8 @@ export default function Reg3() {
                           <input
                             type="password"
                             id="cpassword"
-                            className="form-control form-control-lg"
+                            className="form-control"
+                            placeholder="********"
                             //onChange={handleChangeCpassword}
                           />
                         </div>
