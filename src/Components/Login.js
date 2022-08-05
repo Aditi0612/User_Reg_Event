@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import "./LogReg.css";
 import "./tagsinput.css";
-// import "./Register";
 
 const Login = () => {
   const [verified, setVerified] = useState(false);

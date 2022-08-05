@@ -14,6 +14,8 @@ const Register = () => {
     ad2: "",
     state: "",
     pin: "",
+    student: "",
+    working: "",
     edq: "",
     cllg: "",
     course: "",
@@ -27,6 +29,8 @@ const Register = () => {
     yoe: "",
     pass: "",
     cpass: "",
+    govt: "",
+    pvt: "",
   });
 
   const [records, SetRecords] = useState([]);
@@ -275,26 +279,21 @@ const Register = () => {
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <input
                           type="checkbox"
-                          name="C/C++"
-                          value="C/C++"
-                          /*
-                          onChange={(e) => {
-                            setTechStack1(e.target.value);
-                          }}
-                          */
+                          name="student"
+                          id="student"
+                          value="Student"
                           style={{ margin: "5px" }}
+                          onChange={handleInput}
                         />
                         Student <br />
                         <input
                           type="checkbox"
-                          name="Java"
-                          value="Java"
+                          name="working"
+                          id="working"
+                          value="Working"
                           style={{ margin: "5px" }}
-                          /*
-                          onChange={(e) => {
-                            setTechStack2(e.target.value);
-                          }}*/
-                        />{" "}
+                          onChange={handleInput}
+                        />
                         Working Professional <br />
                       </div>
                     </div>
@@ -424,26 +423,21 @@ const Register = () => {
                       <div className="col-md-12 mb-4 d-flex align-items-center">
                         <input
                           type="checkbox"
-                          name="C/C++"
-                          value="C/C++"
-                          /*
-                          onChange={(e) => {
-                            setTechStack1(e.target.value);
-                          }}
-                          */
+                          name="govt"
+                          id="govt"
+                          value="Govt"
+                          onChange={handleInput}
                           style={{ margin: "5px" }}
                         />
                         Government Company <br />
                         <input
                           type="checkbox"
-                          name="Java"
-                          value="Java"
+                          name="pvt"
+                          id="pvt"
+                          value="Pvt"
                           style={{ margin: "5px" }}
-                          /*
-                          onChange={(e) => {
-                            setTechStack2(e.target.value);
-                          }}*/
-                        />{" "}
+                          onChange={handleInput}
+                        />
                         Private Company <br />
                       </div>
                     </div>

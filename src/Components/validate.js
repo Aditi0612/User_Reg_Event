@@ -28,6 +28,8 @@ const validate = (userRegistration) => {
   }
   if (!userRegistration.pin) {
     errors.pin = "Pincode is required !";
+  } else if (userRegistration.pin.length !== 6) {
+    errors.pin = "Invalid pincode !";
   }
   if (!userRegistration.edq) {
     errors.edq = "Educational Qualification is required !";
@@ -52,6 +54,9 @@ const validate = (userRegistration) => {
     errors.cpass = "Confirm password is required !";
   } else if (userRegistration.pass !== userRegistration.cpass) {
     errors.cpass = "Password and Confirm Password must be same !";
+  }
+  if (!/\S+@\S+\.\S+/.test(userRegistration.cemail)) {
+    errors.cemail = "Invalid email id";
   }
   return errors;
 };
